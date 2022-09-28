@@ -657,7 +657,7 @@ var Numworks = (function (e) {
                         t.CanDnload && (this.manifestationTolerant = t.ManifestationTolerant),
                         (256 !== t.DFUVersion && 282 !== t.DFUVersion) ||
                             2 !== e.settings.alternate.interfaceProtocol ||
-                            ((e = new s.Device(e.device_, e.settings)).memoryInfo && e.memoryInfo.segments.unshift({ start: 536870912, sectorSize: 1024, end: 537133056, readable: !0, erasable: !1, writable: !0 }))),
+                    ((e = new s.Device(e.device_, e.settings)).memoryInfo && e.memoryInfo.segments.unshift({ start: 603979776, sectorSize: 1024, end: 604307456, readable: !0, erasable: !1, writable: !0 }))),
                     (e.logDebug = console.log),
                     (e.logInfo = console.info),
                     (e.logWarning = console.warn),
@@ -739,7 +739,7 @@ var Numworks = (function (e) {
             }
             async getPlatformInfo() {
                 let e = {};
-                this.device.startAddress = 536870912;
+                this.device.startAddress = 603979776;
                 let t = await this.device.do_upload(this.transferSize, 100),
                     r = this.__parseSlotInfo(await t.arrayBuffer());
                 if ((console.log(r), r.slot.magik)) {
@@ -1071,7 +1071,7 @@ var Numworks = (function (e) {
                             t.CanDnload && (this.manifestationTolerant = t.ManifestationTolerant),
                             (256 !== t.DFUVersion && 282 !== t.DFUVersion) ||
                                 2 !== e.settings.alternate.interfaceProtocol ||
-                                ((e = new s.Device(e.device_, e.settings)).memoryInfo && e.memoryInfo.segments.unshift({ start: 536870912, sectorSize: 1024, end: 537133056, readable: !0, erasable: !1, writable: !0 }))),
+                        ((e = new s.Device(e.device_, e.settings)).memoryInfo && e.memoryInfo.segments.unshift({ start: 603979776, sectorSize: 1024, end: 604307456, readable: !0, erasable: !1, writable: !0 }))),
                         (e.logDebug = console.log),
                         (e.logInfo = console.info),
                         (e.logWarning = console.warn),
